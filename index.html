@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">	
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- TITLE OF THE WEBPAGE -->
+  <title>Tanay Jha</title>
+
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <script src="bootstrap/js/jquery-1.9.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+	<!-- ABOUT ME -->
+    <a target=_blank href="aboutme.html" id="aboutme">
+        <div class="mask waves-effect waves-light img-circular" style="background-image: url('photos/aboutme.jpg'); float: left; margin-top: 2%; margin-left: 2%;"></div>
+    </a>
+
+    <!-- PORTFOLIO -->
+    <a target=_blank href="photos/ResumeNew.pdf" id="portfolio">
+        <div class="mask waves-effect waves-light img-circular" style="background-image: url('photos/portfolio.jpg'); float: right; margin-top: 2%; margin-right: 2%;"></div>
+    </a>
+
+    <!-- PROJECTS -->
+    <a target=_blank href="projects.html" id="projects">
+        <div class="mask waves-effect waves-light img-circular" style="background-image: url('photos/projects.jpg'); bottom: 0px; left: 0px; margin-bottom: 2%; margin-left: 2%; position: fixed;"></div>
+    </a>
+
+    <!-- BLOG -->
+    <a target=_blank href="http://trystwithcs.blogspot.in/" id="blog">
+        <div class="mask waves-effect waves-light img-circular" style="background-image: url('photos/blog.jpg'); bottom: 0px; right: 0px; margin-bottom: 2%; margin-right: 2%; position: fixed;"></div>
+    </a>
+
+    <!-- IMAGE -->
+    <div class="mask waves-effect waves-light img-circular-my" style="background-image: url('photos/me.jpg'); transform: translate(-50%, -50%); top: 24%; left: 50%; position: fixed;"></div>
+
+	<!-- NAME -->
+	<h1 class="text-center"><span class="bold-blue" style="top: 39%; position: fixed; transform: translate(-50%, -50%); ">Tanay</span></h1>
+
+	<!-- GITHUB ICON -->
+	<a target=_blank href="https://github.com/tanayjha" id="git-icon">
+	<div class="mask waves-effect waves-light img-circular-icon" style="background-image: url('photos/git.png'); transform: translate(-50%, -50%); top: 50%; left: 45%; position: fixed;"></div>
+	</a>
+
+	<!-- EMAIL ICON -->
+	<a target=_blank href="http://scr.im/tanayjha">
+	<div class="mask waves-effect waves-light img-circular-icon" style="background-image: url('photos/email.png'); transform: translate(-50%, -50%); top: 50%; left: 50%; position: fixed;"></div>
+	</a>
+
+	<!-- FACEBOOK ICON -->
+	<a target=_blank href="https://www.facebook.com/profile.php?id=100007599401037" id="fb-icon">
+	<div class="mask waves-effect waves-light img-circular-icon" style="background-image: url('photos/facebook.png'); transform: translate(-50%, -50%); top: 50%; left: 55%; position: fixed;"></div>
+	</a>
+
+
+	<!-- <div class="container-fluid">
+		<div class="row">
+			<div id="info">
+				<h2>Tanay</h2>
+			</div>
+		</div>
+	</div> -->
+	 
+	<script>
+		$(document).ready(function(e) { 
+		$('h2').css({ 'width':'100%', 'text-align':'center' });
+		var h1 = $('h1').height();
+		var h = h1/2;
+		var w1 = $(window).height();
+		var w = w1/2;
+		var m = w - h
+		m = m - 40*m/100
+		$('h2').css("margin-top",m + "px")  
+	    $("h4").addClass("text-center");
+	    $("#aboutme").on("click", function() {
+	    	$("#info").fadeOut()
+	    	var htmlContent = '\
+    		<img src="photos/me.jpg" height="200" width="200" class="img-circle" style="float: left; margin-top: 5%; \
+    		margin-left: 2%; margin-right: 2%;"> \
+			</img> \
+			<br> <br> <br> <br>\
+    		<h3> I am <b>Tanay Jha</b> <br> I am a computer science graduate from Netaji Subhas Institute of Technology \
+    		(NSIT) <br> My area of interest lies in Algorithms, Data Structures, Number Theory and Machine Learning\
+    		<br> I have also done some competitive programming on online judges like <a target=_blank href="http://codeforces.com/profile/tanay24"> codeforces </a> and <a target=_blank href="http://www.codechef.com/users/tanayjha"> codechef</a>.\
+    		My hobbies include playing tabla, playing cricket, reading novels etc. \
+    		<br> Presently I am working with Sumologic as a software engineer.</h3>'
+    		$("#info").html(htmlContent);
+    		$("#info").fadeIn();
+			});
+			$("#portfolio").on("click", function() {
+	    	$("#info").fadeOut()
+	    	var htmlContent = '\
+	    	<h2> Check my <a target=_blank href="photos/ResumeNew.pdf"> resume</a> here.'
+    		$("#info").html(htmlContent);
+    		$("#info").fadeIn();
+			});
+			$("#projects").on("click", function() {
+	    	$("#info").fadeOut()
+    		$("#info").html("<h2>PROJECTS</h2>");
+    		$("#info").fadeIn();
+			});
+			$("#blog").on("click", function() {
+	    	$("#info").fadeOut()
+	    	var htmlContent = '\
+	    	<h2 style="margin-left: 2%; color: white;"> I write a blog about concepts of computer science and mathematics. <br> You can check out my blog\
+	    	<a target=_blank href="http://trystwithcs.blogspot.in/"> here </a> <h2>'
+    		$("#info").html(htmlContent);
+    		$("#info").fadeIn();
+			});
+			$("#contactme").on("click", function() {
+	    	$("#info").fadeOut()
+	    	var htmlContent = '\
+	    	<h2 style="margin-left: 2%;"> You can contact me at <b>jha.tanay@gmail.com</b>. <br> Or visit my \
+	    	<a target=_blank href="https://www.linkedin.com/in/tanayjha"> linkedin</a> profile </h2>'
+    		$("#info").html(htmlContent);
+    		$("#info").fadeIn();
+			}); 
+	 	});
+	</script>
+
+</body>
+
+</html>
+
