@@ -1,0 +1,9 @@
+baseURL = 'https://tanayjha.github.io/'
+languageCode = 'en-us'
+theme = "PaperMod"
+enableEmoji = true
+
+[params.profileMode]
+enabled = true
+title = 'My Tryst With CS'
+subtitle = "A page about me and my interests"
