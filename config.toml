@@ -7,3 +7,11 @@ enableEmoji = true
 enabled = true
 title = 'My Tryst With CS'
 subtitle = "A page about me and my interests"
+imageUrl = "images/profilepic.jpg"
+imageTitle = "Me"
+imageWidth = 120
+imageHeight = 120
+
+  [[params.profileMode.buttons]]
+  name = "Blog"
+  url = "/blog"
