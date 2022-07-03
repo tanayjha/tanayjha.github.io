@@ -6,16 +6,27 @@ enableEmoji = true
 [params.profileMode]
 enabled = true
 title = 'My Tryst With CS'
-subtitle = "A page about me and my interests"
+subtitle = "My journey as a software developer"
 imageUrl = "images/profilepic.jpg"
 imageTitle = "Me"
 imageWidth = 120
 imageHeight = 120
 
   [[params.profileMode.buttons]]
+  name = "About"
+  url = "/about"
+
+  [[params.profileMode.buttons]]
   name = "Blog"
   url = "/blog"
 
+  [[params.profileMode.buttons]]
+  name = "Projects"
+  url = "/projects"
+
+  [[params.profileMode.buttons]]
+  name = "Resume"
+  url = "/resume"
 
 [markup]
   [markup.goldmark]
