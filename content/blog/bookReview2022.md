@@ -1,6 +1,6 @@
 ---
 title: "Year in books - 2022"
-date: 2022-12-31T00:24:13+05:30
+date: 2022-12-30T00:24:13+05:30
 draft: false
 showToc: true
 ShowReadingTime: true
