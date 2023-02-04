@@ -63,7 +63,7 @@ So lets start with the first question. Why do we need α to be a primitve root o
 
 For the second question, how does step 4, i.e K = Y<sup>X</sup> mod , guarantee that both Alice and Bob got the same key. The proof for that is pretty elementary and involves basic arithmatic.
 
-{{< figure src="/images/diffieHellman/diffieHellman.png"  >}}
+{{< figure src="/images/diffieHellman/dhProof.png"  >}}
 
 Now, for the final question. What happens if someone intercepts the public keys Y<sub>A</sub> and Y<sub>B</sub> shared by Alice and Bob? Can they figure out the shared secret key?
 In order to calculate the secret key X<sub>A</sub>/X<sub>B</sub>, the hacker will have to solve the discrete logarithm problem as they need to calculate X from the equation: Y = α<sup>X</sup> mod q. We have already seen above that calculating discrete log is a very hard problem and has similar complexity as factoring product of primes which is the basis of security for RSA. So we can confidently say that Diffie-Hellman is at least as secured as the RSA which is good enough for all practical purposes.
