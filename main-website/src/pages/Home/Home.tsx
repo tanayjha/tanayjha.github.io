@@ -9,9 +9,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home" style={{ height: "95vh" }}>
-        <Particle />
+    <section style={{ height: "95vh" }}>
+      <Container fluid className="home-section" id="home" style={{ height: "100%" }}>
+        {/* <Particle /> */}
         <Container className="home-content">
           <Row style={{ display: "flex" }}>
             <Col md={8} className="home-header">
@@ -42,7 +42,7 @@ function Home() {
             </Col>
           </Row>
 
-          <Row>
+          {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
@@ -71,7 +71,7 @@ function Home() {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */}
         </Container>
       </Container>
       {/* <Home2 /> */}
