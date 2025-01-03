@@ -13,6 +13,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+       run:
+         working-directory: ./main-website/
 
     strategy:
       matrix:
@@ -22,8 +25,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Change directory to mainWebsite
-      run: cd main-website
+    # - name: Change directory to mainWebsite
+    #   run: cd main-website
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
