@@ -16,7 +16,7 @@ function Home() {
           <Row style={{ display: "flex" }}>
             <Col md={8} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Hello There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
