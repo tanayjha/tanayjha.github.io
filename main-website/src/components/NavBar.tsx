@@ -104,6 +104,7 @@ function NavBar() {
                 href="https://tanayjha-blog.vercel.app/blog"
                 target="_blank"
                 rel="noreferrer"
+                className="external-link"
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
