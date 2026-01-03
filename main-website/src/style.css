@@ -1,23 +1,38 @@
-html {
+:root {
     --section-background-color: linear-gradient(
       to bottom left,
       rgba(17, 16, 16, 0.582),
       rgba(12, 8, 24, 0.904)
     );
-  
+
     --image-gradient: linear-gradient(
       to bottom left,
       rgba(17, 16, 16, 0.678),
       rgba(12, 10, 22, 0.863)
     );
-  
+
     --imp-text-color: #c770f0;
+    --primary-purple: #c770f0;
+    --dark-purple: #623686;
+    --light-purple: #cd5ff8;
+    --bg-dark: #0c0513;
+    --bg-secondary: #181a27;
   }
-  
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   .purple {
     color: var(--imp-text-color) !important;
   }
-  
+
   button:focus {
     box-shadow: none !important;
   }
@@ -201,10 +216,32 @@ html {
     z-index: -1;
     transition: all 0.3s ease-out 0s;
   }
-  
+
   .navbar-nav .nav-item a:hover::after {
     width: 100%;
     height: 100%;
+  }
+
+  /* Active navigation link */
+  .navbar-nav .nav-item a.active {
+    color: #c770f0 !important;
+    font-weight: 600;
+  }
+
+  .navbar-nav .nav-item a.active::after {
+    width: 100%;
+  }
+
+  /* Focus states for accessibility */
+  .navbar-nav .nav-item a:focus-visible {
+    outline: 2px solid #c770f0;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  button:focus-visible {
+    outline: 2px solid #c770f0;
+    outline-offset: 2px;
   }
   
   /* --------- */
@@ -298,6 +335,14 @@ html {
     color: #b562d6 !important;
   }
   
+  /* Tablet breakpoint */
+  @media (max-width: 991px) {
+    .Typewriter__wrapper {
+      font-size: 1.8em !important;
+    }
+  }
+
+  /* Mobile breakpoint */
   @media (max-width: 767px) {
     .Typewriter__wrapper {
       font-size: 1.4em !important;
