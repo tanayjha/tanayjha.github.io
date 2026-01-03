@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Hugo build artifacts
+.hugo_build.lock
+public/
+resources/_gen/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
