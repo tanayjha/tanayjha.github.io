@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import "./style.css";
-import Preloader from './Pre';
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
@@ -12,11 +11,11 @@ import './bootstrap/bootstrap.min.css';
 import About from "./pages/About/About";
 import Resume from "./components/Resume";
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      updateLoad(false);
     }, 1200);
 
     return () => clearTimeout(timer);
