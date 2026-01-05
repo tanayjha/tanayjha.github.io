@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../components/Particle";
 import ProjectCard from "./ProjectCards";
+import photoResizerImg from "../../Assets/Projects/photo-resizer.png";
 import proj1 from "../../Assets/Projects/proj1.png";
 import proj2 from "../../Assets/Projects/proj2.png";
 import proj3 from "../../Assets/Projects/proj3.png";
@@ -33,6 +34,16 @@ function Projects() {
           Here are a few personal projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={photoResizerImg}
+              isBlog={false}
+              title="Photo Resizer Tool"
+              description="A browser-based image resizing tool with support for JPEG, PNG, WebP, and PDF files. Features include aspect ratio locking, quality control, and real-time file size estimation."
+              demoLink="/tools/photo-resizer"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={proj1}

@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar";
 import './bootstrap/bootstrap.min.css';
 import About from "./pages/About/About";
 import Resume from "./components/Resume";
+import PhotoResizer from "./pages/Tools/PhotoResizer/PhotoResizer";
 function App() {
   const [load, updateLoad] = useState(true);
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/tools/photo-resizer" element={<PhotoResizer />} />
           </Routes>
         <Footer />
       </div>
