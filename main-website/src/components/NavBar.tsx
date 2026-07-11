@@ -33,6 +33,9 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container style={{ maxWidth: "100%" }}>
+        <Navbar.Brand as={Link} to="/" className="site-brand" onClick={() => updateExpanded(false)}>
+          TJ
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
