@@ -9,18 +9,22 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+    <Row className="skill-grid">
+      <Col xs={4} md={2} className="tech-icons" title="macOS">
         <SiMacos />
+        <span>macOS</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="Postman">
         <SiPostman />
+        <span>Postman</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="Kafka">
         <SiApachekafka />
+        <span>Kafka</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="Vercel">
         <SiVercel />
+        <span>Vercel</span>
       </Col>
     </Row>
   );

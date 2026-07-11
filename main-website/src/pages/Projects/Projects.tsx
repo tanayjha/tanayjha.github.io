@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../../components/Particle";
 import ProjectCard from "./ProjectCards";
 import photoResizerImg from "../../Assets/Projects/photo-resizer.png";
 import proj1 from "../../Assets/Projects/proj1.png";
@@ -24,17 +23,16 @@ import proj18 from "../../Assets/Projects/proj18.png";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Personal <strong className="purple">Projects </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few personal projects I've worked on.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+    <Container fluid className="project-section page-section">
+      <Container className="site-container">
+        <Row className="section-intro">
+          <Col lg={8}>
+            <h1>My Personal Projects</h1>
+            <p>Here are a few personal projects I've worked on.</p>
+          </Col>
+        </Row>
+        <Row className="project-list">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={photoResizerImg}
               isBlog={false}
@@ -44,7 +42,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj1}
               isBlog={false}
@@ -54,7 +52,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj2}
               isBlog={false}
@@ -64,7 +62,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj3}
               isBlog={false}
@@ -74,7 +72,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj4}
               isBlog={false}
@@ -84,7 +82,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj5}
               isBlog={false}
@@ -94,7 +92,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj6}
               isBlog={false}
@@ -104,7 +102,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj7}
               isBlog={false}
@@ -114,7 +112,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj8}
               isBlog={false}
@@ -124,7 +122,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj9}
               isBlog={false}
@@ -134,7 +132,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj10}
               isBlog={false}
@@ -144,7 +142,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj11}
               isBlog={false}
@@ -154,7 +152,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj12}
               isBlog={false}
@@ -164,7 +162,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj13}
               isBlog={false}
@@ -174,7 +172,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj14}
               isBlog={false}
@@ -184,7 +182,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj15}
               isBlog={false}
@@ -194,7 +192,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj16}
               isBlog={false}
@@ -204,7 +202,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj17}
               isBlog={false}
@@ -214,7 +212,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col lg={10} className="project-card">
             <ProjectCard
               imgPath={proj18}
               isBlog={false}

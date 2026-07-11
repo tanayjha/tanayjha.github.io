@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
@@ -16,34 +15,27 @@ interface ProjectCardProps {
 function ProjectCards(props: ProjectCardProps) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
+      <div className="project-card-media">
+        <Card.Img src={props.imgPath} alt="" />
+      </div>
+      <Card.Body className="project-card-body">
+        <p className="project-label">Project</p>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
-        )}
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+        <Card.Text>{props.description}</Card.Text>
+        <div className="project-links">
+          {props.ghLink && (
+            <a href={props.ghLink} target="_blank" rel="noreferrer">
+              <BsGithub />
+              {props.isBlog ? "Blog" : "GitHub"}
+            </a>
+          )}
+          {!props.isBlog && props.demoLink && (
+            <a href={props.demoLink} target={props.demoLink.startsWith("/") ? "_self" : "_blank"} rel="noreferrer">
+              <CgWebsite />
+              Demo
+            </a>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
