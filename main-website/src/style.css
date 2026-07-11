@@ -74,6 +74,29 @@ a:hover {
   background: var(--text);
 }
 
+.site-brand {
+  align-items: center;
+  background: var(--accent-strong);
+  border: 1px solid var(--accent-strong);
+  border-radius: 14px;
+  color: #faf9f6 !important;
+  display: inline-flex;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem !important;
+  font-weight: 700;
+  height: 2.6rem;
+  justify-content: center;
+  letter-spacing: -0.04em;
+  margin-right: auto;
+  padding: 0 !important;
+  width: 2.6rem;
+}
+
+.site-brand:hover {
+  color: #faf9f6 !important;
+  transform: translateY(-1px);
+}
+
 .navbar-nav .nav-item {
   margin-left: 1.4rem;
 }
